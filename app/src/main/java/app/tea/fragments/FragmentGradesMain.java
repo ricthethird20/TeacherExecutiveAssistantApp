@@ -25,7 +25,7 @@ import app.tea.constants.AppConstants;
 import app.tea.db.AppDb;
 
 /**
- * Created by Ric on 3/10/2016.
+ * Created by Ricardo on 3/10/2016.
  */
 public class FragmentGradesMain extends Fragment {
     ListView lv_quiz;
