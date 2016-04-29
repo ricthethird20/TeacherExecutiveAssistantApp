@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Subject and Section"
+        android:background="#6600F9"
+        android:textColor="#FFFFFF"
+        android:padding="3dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="5"
+            android:text="Subject:"
+            android:layout_gravity="center_vertical" />
+
+        <Spinner
+            android:layout_width="157dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_subjcode"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="5"
+            android:text="Section:"
+            android:layout_gravity="center_vertical" />
+
+        <Spinner
+            android:layout_width="157dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_section"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="5"
+            android:text="Grade For:"
+            android:layout_gravity="center_vertical" />
+
+        <Spinner
+            android:layout_width="157dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_grade"
+            android:entries="@array/list_parts"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export Grade"
+            android:id="@+id/btnAdd"/>
+    </LinearLayout>
+
+</LinearLayout>
+

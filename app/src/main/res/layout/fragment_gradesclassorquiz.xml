@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CP"
+        android:id="@+id/tv_subjcode"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Participation"
+        android:id="@+id/tv_record"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ricardo Ferrancullo III"
+        android:textSize="20sp"
+        android:id="@+id/tv_name"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Grade"
+            android:id="@+id/textView8"
+            android:layout_gravity="center_vertical" />
+
+        <NumberPicker
+            android:layout_width="100dp"
+            android:layout_height="101dp"
+            android:id="@+id/numberPicker2"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="."
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical" />
+
+        <NumberPicker
+            android:layout_width="100dp"
+            android:layout_height="101dp"
+            android:id="@+id/numberPicker3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quiz"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:textSize="20sp"
+                android:text="Quiz No."
+                android:id="@+id/textView82r3"
+                android:layout_gravity="center_vertical" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:id="@+id/numQuizSeatNo"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/btnSave"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.40" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="Grade"
+                android:id="@+id/textView82"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="Quiz No."
+                android:id="@+id/textView823"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:id="@+id/lv_quiz" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Student"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
